@@ -1,0 +1,33 @@
+接口名称：SetFamily
+
+提交时接口参数实例：
+
+{
+	"avatar":"",
+	"name":"Roc Chiang",
+	"real_name":"real_name",
+	"gender":1,
+	"birthday":"1982-12-12",
+	"weight":59.8,
+	"height":175,
+	"waistline":45,
+	"hipline":55,
+	"phone":"12345678902",
+	"menstrual_cycle":28,  //202好孕100 经期周期
+	"menstrual_days":5, //202好孕100 经期天数
+	"due_date":"2016-12-12" //205胎心 预产期
+}
+
+返回值实例：
+{
+    "ret": 0,
+    "msg": "ok",
+    "err_code": 0
+}
+
+errCode:
+6	验证SoapHeader失败，没有权限访问接口
+9	解析Json出错
+19	不是此用户的家庭成员
+20	数据库异常
+10001	id不在正确的范围之内
